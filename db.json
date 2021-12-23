@@ -1,0 +1,11 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "user": "F. Scott Fitzgerald",
+        "content": "I saw Dylan in LA in 2016. You could hardly hear him. After he sang 'Tangled Up in Blue,' an audience member shouted 'Play 'Tangled Up in Blue!''",
+        "upvotes": 8,
+        "downvotes": 0
+      }
+    ]
+  }
