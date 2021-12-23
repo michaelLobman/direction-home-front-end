@@ -31,15 +31,35 @@ h1 {
     width: 30%;
     background-color: #FFF5EF;
     float: right;
-
 }
 
 .video-container {
-    display: grid;;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-content: space-evenly;
+    margin: 10px;
+    grid-gap: 30px;
+    padding: 10px;
 }
 
 .video {
-    width: 25%;
-    padding: 1%;
+    width: 560px;
+    height: 315px;
+    margin: auto;
  
 }
+
+input, textarea {
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #FFF5EF;
+    border: 1px solid black;
+    border-radius: 10px;
+    display:grid;
+    color:hsl(344, 38%, 38%)
+}
+
+
