@@ -92,3 +92,8 @@ input, textarea {
     text-align: right;
     margin: 0 10% 0 0;
 }
+
+#moment-list {
+    float: right;
+    width: 50%;
+}

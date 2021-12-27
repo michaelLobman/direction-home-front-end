@@ -12,11 +12,36 @@ function Moments(){
             .then(moments => setMoments(moments));
     }, [])
 
+    const renderedMoments = moments.map(moment => (
+        <div key={moment.id}>
+            <p>{moment.content}</p>
+            <h5>{moment.user}</h5>
+        </div>
+    ))
+
 
     function handleSubmit(e){
         e.preventDefault();
-        console.log(name);
-        console.log(userMoment);
+
+        const newEntry = {
+            user: name,
+            content: userMoment,
+            upvotes: 0,
+            downvotes: 0,
+        }
+
+        fetch('http://localhost:4000/posts', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            }, 
+            body: JSON.stringify(newEntry),
+        })
+            .then(r => r.json())
+            .then(newMoment => setMoments([...moments, newMoment]))
+
+        setMoment("");
+        setName("");
     }
     
     return (
@@ -45,13 +70,14 @@ function Moments(){
                 </label>
                 <button type="submit">Add Moment</button>
             </form>
-            <div id="moment-ul">
-                {moments.map(moment => (
+            <div id="moment-list">
+                {renderedMoments}
+                {/* {moments.map(moment => (
                     <div key={moment.id}>
                         <p>{moment.content}</p>
                         <h5>{moment.user}</h5>
                     </div>
-                ))}
+                ))} */}
             </div>
         </div>
         
