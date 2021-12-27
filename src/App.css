@@ -30,7 +30,6 @@ h1 {
     border-radius: 10px;
     width: 30%;
     background-color: #FFF5EF;
-    float: right;
 }
 
 .video-container {
@@ -62,4 +61,34 @@ input, textarea {
     color:hsl(344, 38%, 38%)
 }
 
+#song-ul {
+    list-style: none;
+    /* border: 2px solid black; */
+    width: 30%;
+    text-align: center;
+    float: right;
+    color: hsl(344, 38%, 38%)
+}
 
+.up, .down {
+    border: none;
+    margin: 5px;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+
+.song {
+    padding:10px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: #FFF5EF;
+
+}
+
+#vote-component {
+    text-align: right;
+    margin: 0 10% 0 0;
+}
