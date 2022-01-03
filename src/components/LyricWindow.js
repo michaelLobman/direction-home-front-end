@@ -12,7 +12,7 @@ function LyricWindow(){
 
     const lyricArray = [
         "Everything went from bad to worse...",
-        "Money doesn't talk, it swears...",
+        "Money doesn’t talk, it swears, obscenity, who really cares...",
         "Don't criticize what you can't understand...",
         "And I'll tell it and speak it and think it and breathe it...",
         "All the truth in the world adds up to one big lie...",
@@ -37,7 +37,8 @@ function LyricWindow(){
         "Can you tell me what it means to be or not to be? You won't get away with fooling me...",
         "`There must be some way out of here,' said the joker to the thief...",
         "There are many here among us who feel that life is but a joke",
-        "In these times of compassion when conformity's in fashion say one more stupid thing to me before the final nail is driven in"
+        "In these times of compassion when conformity's in fashion...",
+        "Say one more stupid thing to me before the final nail is driven in..."
     ]
 
     function randomLyric(array) {
