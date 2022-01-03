@@ -1,6 +1,5 @@
 import React from "react";
 import LyricWindow from "./LyricWindow";
-import RankSongs from "./RankSongs";
 
 function Home() {
     return (
