@@ -1,14 +1,13 @@
 import React from "react";
-// import Albums from "./Albums";
 import LyricWindow from "./LyricWindow";
-import TopSong from "./TopSong";
+import RankSongs from "./RankSongs";
 
 function Home() {
     return (
         <div>
             <h2 className="page-title">The Unofficial Home for Dylan Fans</h2>
-            <TopSong />
             <LyricWindow />
+            <img id="home-img" src="https://media.newyorker.com/photos/5cfd180233dd5c419b77234d/master/pass/Remnick-Netflix.jpg"/>
         </div>
     )
 }

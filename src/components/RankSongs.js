@@ -1,0 +1,111 @@
+import React, { useState, useEffect } from "react";
+import VoteButtons from "./VoteButtons";
+
+function RankSongs(){
+
+    // const songArray = [
+    //     "Shelter from the Storm",
+    //     "It's All Over Now, Baby Blue",
+    //     "Like a Rolling Stone",
+    //     "Blowin' in the Wind",
+    //     "Hurricane",
+    //     "Tangled Up in Blue",
+    //     "It's Alright, Ma (I'm Only Bleeding)",
+    //     "Mr. Tambourine Man",
+    //     "A Hard Rain's a-Gonna Fall",
+    //     "Visions of Johanna"
+    // ]
+
+    const [rankedSongs, setRankedSongs] = useState([]);
+    // const [rankedSongs, setRankedSongs] = useState(songArray);
+
+    // useEffect(() => {
+    //     fetch('http://localhost:4000/songs')
+    //         .then(r => r.json())
+    //         .then(fetchedSongs => {
+    //             let newArray = [];
+    //             fetchedSongs.map(song => newArray.push(song.title));
+    //             setRankedSongs(newArray)
+    //         })
+    // }, [])
+
+    useEffect(() => {
+        fetch('http://localhost:4000/songs')
+            .then(r => r.json())
+            .then(fetchedSongs => {
+                let newArray = [];
+                fetchedSongs.map(song => newArray.push(song.title));
+                setRankedSongs(newArray)
+            })
+    }, [])
+
+    function onVote(e){
+        const voteClass = e.target.className;
+        const votedSong = e.target.parentElement.parentElement.id;
+        const currentIndex = rankedSongs.indexOf(votedSong);
+        const updatedSongs = [...rankedSongs];
+
+
+
+        if (voteClass === "up") {
+            if (currentIndex === 0) {
+                return updatedSongs;
+            } else {
+            [updatedSongs[currentIndex], updatedSongs[currentIndex - 1]] = [updatedSongs[currentIndex - 1], updatedSongs[currentIndex]];
+            }
+        } else {
+            if (currentIndex === 9) {
+                return updatedSongs;
+            } else {
+                [updatedSongs[currentIndex], updatedSongs[currentIndex + 1]] = [updatedSongs[currentIndex + 1], updatedSongs[currentIndex]];
+            }
+        }
+        setRankedSongs(updatedSongs);
+    }
+
+    const renderedSongs = rankedSongs.map(song => <li id={song} className="song" key={song}>{song}<VoteButtons onVote={onVote}/></li>)
+
+    function handleClick(e){
+        e.preventDefault();
+
+        for (let i = 0; i < rankedSongs.length; i++) {
+
+            fetch(`http://localhost:4000/songs/${i}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                title: rankedSongs[i]
+             }),
+            })
+                // .then(r => r.json())
+                // .then(songs => {
+                //     let updatedArray =[];
+                //     songs.map(song => updatedArray.push(song.title))
+                //     setRankedSongs(updatedArray);
+                // })
+            
+        }
+    }
+
+    return(
+        <div id="flex-container">
+            <div id="image-container">
+                <img className="top-img" src="https://consequence.net/wp-content/uploads/2018/09/bob-dylan-blood-tracks-box-set-bootleg-series.png" />
+                <img className="bottom-img" src="https://www.rollingstone.com/wp-content/uploads/2018/11/bob-dylan-in-the-studio-1974-Barry-Feinstein.jpg" />
+            </div>
+            <div id="vote-container">
+                <h3 id="rank-header" className="subheader">Rank the Top Dylan Songs</h3>
+                <ul id="song-ul">
+                    {renderedSongs}
+                </ul>
+                <button id="rank-button" className="button" onClick={handleClick}>Save Song Rankings</button>
+            </div>
+        </div>
+
+    )
+
+}
+
+export default RankSongs;

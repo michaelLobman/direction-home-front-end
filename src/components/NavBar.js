@@ -32,6 +32,14 @@ function NavBar(){
         >
             Home
         </NavLink>
+        <NavLink
+            to="/rank-songs"
+            exact
+            style={linkStyle}
+            activeStyle={activeStyle}
+        >
+            Rank Songs 
+        </NavLink>
         <NavLink 
             to="/live"
             exact

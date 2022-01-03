@@ -5,6 +5,7 @@ import NavBar from "./NavBar"
 import Live from "./Live"
 import Moments from "./Moments"
 import Home from "./Home"
+import RankSongs from "./RankSongs"
 
 
 import "../App.css"
@@ -15,6 +16,9 @@ function App() {
     <div>
       <NavBar />
       <Switch>
+        <Route exact path = "/rank-songs">
+          <RankSongs />
+        </Route>
         <Route exact path ="/live">
           <Live />
         </Route>
