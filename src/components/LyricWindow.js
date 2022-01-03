@@ -35,7 +35,9 @@ function LyricWindow(){
         "I am hanging in the balance of a perfect finished plan...",
         "Put out your hand - there’s nothin’ to hold... Open your mouth - I'll stuff it with gold...",
         "Can you tell me what it means to be or not to be? You won't get away with fooling me...",
-        "There must be some way out of here,' said the joker to the thief..."
+        "`There must be some way out of here,' said the joker to the thief...",
+        "There are many here among us who feel that life is but a joke",
+        "In these times of compassion when conformity's in fashion say one more stupid thing to me before the final nail is driven in"
     ]
 
     function randomLyric(array) {
