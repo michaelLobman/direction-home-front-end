@@ -45,13 +45,22 @@ function Moments(){
     return (
         <div id="moment-container">
             <div id="add-container">
-                <h3 className="subheader" id="moment-h3">Add Your Dylan Moment</h3>
-                <form id="add-moment" onSubmit={handleSubmit}>
+                <h3 
+                    className="subheader" 
+                    id="moment-h3"
+                >
+                    Add Your Dylan Moment
+                </h3>
+                <form
+                    id="add-moment" 
+                    onSubmit={handleSubmit}
+                >
                     <label>
                         Name:
                         <input 
                             onChange={e => setName(e.target.value)} 
-                            type="text" id="name" 
+                            type="text" 
+                            id="name" 
                             name="name" 
                             value={name}
                         />
@@ -73,7 +82,10 @@ function Moments(){
             <div id="moment-list">
                 {renderedMoments}
             </div>
-            <img id="moment-img" src="https://media.gettyimages.com/photos/singer-bob-dylan-is-photographed-in-the-1970s-credit-must-read-ken-5-picture-id173184928?s=2048x2048"/>
+            <img 
+                id="moment-img" 
+                src="https://media.gettyimages.com/photos/singer-bob-dylan-is-photographed-in-the-1970s-credit-must-read-ken-5-picture-id173184928?s=2048x2048"
+            />
         </div>
         
     )
