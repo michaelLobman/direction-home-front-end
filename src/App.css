@@ -89,11 +89,9 @@ input, textarea {
     
 }
 
-
 .song {
     padding:10px;
     border: 2px solid black;
-    /* text-align: center; */
     background-color: #FFF5EF;
     font-size: 1.5vw;
 }
@@ -121,17 +119,11 @@ input, textarea {
 #vote-container {
     flex: 1;
     margin: auto;
-    /* float: right; */
-    /* margin: auto 5% 5% 0; */
-    /* width: 50%; */
 }
 
 #image-container {
     margin: auto;
-    /* margin: 80px 0 0 0; */
     flex: 1;
-    /* float: left; */
-
 }
 
 .stacked-img {
@@ -139,21 +131,10 @@ input, textarea {
     display: block;
     padding: 10px;
 }
-/* .bottom-img {
-    width: 15%;
-    display: block;
-} */
-
-
-/* #vote-container {
-    text-align: center;
-    margin: auto;
-} */
 
 #add-container {
     margin: 5% 1% 1% 5%;
     width: 40%;
-    /* display: inline-block; */
     float: left;
 }
 

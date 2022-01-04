@@ -10,11 +10,6 @@ function Home() {
             <img 
                 className="album-covers" 
                 alt="Album Cover Art" 
-                src="https://cdn.smehost.net/bobdylancom-uscolumbiaprod/wp-content/uploads/2011/10/5701835_170.jpg" 
-            />
-            <img 
-                className="album-covers" 
-                alt="Album Cover Art" 
                 src="https://cdn.smehost.net/bobdylancom-uscolumbiaprod/wp-content/uploads/2011/10/5701847_147.jpg" 
             />
              <img 
@@ -30,7 +25,7 @@ function Home() {
             <img 
                 className="album-covers"
                 alt="Album Cover Art"
-                src="https://cdn.smehost.net/bobdylancom-uscolumbiaprod/wp-content/uploads/2011/10/4469449_278.jpg"
+                src="https://cdn.smehost.net/bobdylancom-uscolumbiaprod/wp-content/uploads/2011/10/3992174_218.jpg"
             />
             <img
                 className="album-covers"
@@ -56,6 +51,11 @@ function Home() {
                 className="album-covers"
                 alt="Album Cover Art"
                 src="https://cdn.smehost.net/bobdylancom-uscolumbiaprod/wp-content/uploads/2012/12/tempest-300x300.jpg"
+            />
+            <img
+                className="album-covers"
+                alt="Album Cover Art"
+                src="https://cdn.smehost.net/bobdylancom-uscolumbiaprod/wp-content/uploads/2020/06/RoughAndRowdyWays.jpg"
             />
         </div>
     )
