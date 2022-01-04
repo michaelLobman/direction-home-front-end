@@ -13,7 +13,6 @@ function NavBar(){
         textDecoration: "none",
         fontSize: "1.8vw",
         color: "#FFF5EF"
-
     }
 
     const activeStyle = { 

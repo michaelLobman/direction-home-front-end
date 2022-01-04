@@ -26,8 +26,6 @@ function Moments(){
         const newEntry = {
             user: name,
             content: userMoment,
-            upvotes: 0,
-            downvotes: 0,
         }
 
         fetch('http://localhost:4000/posts', {
