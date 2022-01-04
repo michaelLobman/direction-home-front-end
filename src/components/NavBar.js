@@ -55,7 +55,6 @@ function NavBar(){
         >
             Moments
         </NavLink>
-
     </div>
     )
 
