@@ -134,7 +134,7 @@ input, textarea {
 
 }
 
-.top-img, .bottom-img {
+.stacked-img {
     width: 80%;
     display: block;
     padding: 10px;
