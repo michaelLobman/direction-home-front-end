@@ -34,7 +34,7 @@ function RankSongs(){
                 [updatedSongs[currentIndex], updatedSongs[currentIndex + 1]] = [updatedSongs[currentIndex + 1], updatedSongs[currentIndex]];
             }
         }
-        
+
         setRankedSongs(updatedSongs);
     }
 
