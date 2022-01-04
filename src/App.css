@@ -14,6 +14,11 @@ h1, h2 {
 h1 {
     text-transform: uppercase;
     margin: 2%;
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 2vw;
 }
 
 .page-title {
@@ -24,6 +29,7 @@ h1 {
     padding:10px;
     color: hsl(344, 38%, 38%);
     text-align: center;
+    font-size: 1.5vw;
 }
 
 .lyric-window {
@@ -89,7 +95,7 @@ input, textarea {
     border: 2px solid black;
     /* text-align: center; */
     background-color: #FFF5EF;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .moments {

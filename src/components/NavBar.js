@@ -11,7 +11,7 @@ function NavBar(){
         padding: "10px",
         textAlign: "center",
         textDecoration: "none",
-        fontSize: "20px",
+        fontSize: "1.8vw",
         color: "#FFF5EF"
 
     }
