@@ -17,17 +17,6 @@ function RankSongs(){
     // ]
 
     const [rankedSongs, setRankedSongs] = useState([]);
-    // const [rankedSongs, setRankedSongs] = useState(songArray);
-
-    // useEffect(() => {
-    //     fetch('http://localhost:4000/songs')
-    //         .then(r => r.json())
-    //         .then(fetchedSongs => {
-    //             let newArray = [];
-    //             fetchedSongs.map(song => newArray.push(song.title));
-    //             setRankedSongs(newArray)
-    //         })
-    // }, [])
 
     useEffect(() => {
         fetch('http://localhost:4000/songs')
