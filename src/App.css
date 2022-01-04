@@ -38,7 +38,7 @@ h2 {
     width: 30%;
     background-color: #FFF5EF;
     text-align: center;
-    margin: 2% auto;
+    margin: 4% auto;
 }
 
 .video-container {
@@ -225,4 +225,8 @@ input, textarea {
     text-decoration: underline double;
     text-underline-offset: 10px;
     font-size: 2vw;
+}
+
+.album-covers {
+    width: 20%;
 }
