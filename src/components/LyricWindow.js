@@ -38,7 +38,9 @@ function LyricWindow(){
         "`There must be some way out of here,' said the joker to the thief...",
         "There are many here among us who feel that life is but a joke...",
         "In these times of compassion when conformity's in fashion...",
-        "Say one more stupid thing to me before the final nail is driven in..."
+        "Say one more stupid thing to me before the final nail is driven in...",
+        "I’m glad to see you’re still alive, you’re lookin’ like a saint...",
+        "I was born too late - blame it on a simple twist of fate..."
     ]
 
     function randomLyric(array) {
