@@ -3,19 +3,6 @@ import VoteButtons from "./VoteButtons";
 
 function RankSongs(){
 
-    // const songArray = [
-    //     "Shelter from the Storm",
-    //     "It's All Over Now, Baby Blue",
-    //     "Like a Rolling Stone",
-    //     "Blowin' in the Wind",
-    //     "Hurricane",
-    //     "Tangled Up in Blue",
-    //     "It's Alright, Ma (I'm Only Bleeding)",
-    //     "Mr. Tambourine Man",
-    //     "A Hard Rain's a-Gonna Fall",
-    //     "Visions of Johanna"
-    // ]
-
     const [rankedSongs, setRankedSongs] = useState([]);
 
     useEffect(() => {
@@ -33,8 +20,6 @@ function RankSongs(){
         const votedSong = e.target.parentElement.parentElement.id;
         const currentIndex = rankedSongs.indexOf(votedSong);
         const updatedSongs = [...rankedSongs];
-
-
 
         if (voteClass === "up") {
             if (currentIndex === 0) {
@@ -58,7 +43,6 @@ function RankSongs(){
         e.preventDefault();
 
         for (let i = 0; i < rankedSongs.length; i++) {
-
             fetch(`http://localhost:4000/songs/${i}`, {
             method: "PATCH",
             headers: {
@@ -68,13 +52,6 @@ function RankSongs(){
                 title: rankedSongs[i]
              }),
             })
-                // .then(r => r.json())
-                // .then(songs => {
-                //     let updatedArray =[];
-                //     songs.map(song => updatedArray.push(song.title))
-                //     setRankedSongs(updatedArray);
-                // })
-            
         }
 
         alert("Rankings saved!")
@@ -95,9 +72,7 @@ function RankSongs(){
                 <button id="rank-button" className="button" onClick={handleClick}>Save Song Rankings</button>
             </div>
         </div>
-
     )
-
 }
 
 export default RankSongs;
