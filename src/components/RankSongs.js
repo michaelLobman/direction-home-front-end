@@ -87,6 +87,8 @@ function RankSongs(){
                 // })
             
         }
+
+        alert("Rankings saved!")
     }
 
     return(
