@@ -8,7 +8,9 @@ There are **Bob Dylan** websites, and there are Bob Dylan **websites**. This is 
 
 ## Usage
 
-With four unique pages, ~~No~~ Direction Home gives users a bit of every. On the "Home" page, watch as every five seconds a new curated Dylan lyric appears in the Lyric Window. 
+With four unique pages, ~~No~~ Direction Home gives Dylan fans a place to celebrate his music and share experiences with one another. 
+
+On the "Home" page, watch as every five seconds a new curated Dylan lyric appears in the Lyric Window:
 
 ![Home Page](./images/awful-truth.png)
 
