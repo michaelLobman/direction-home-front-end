@@ -1,5 +1,19 @@
 # ~~No~~ Direction Home
 
+~~No~~ Direction Home is a React App for Bob Dylan fans. Welcome home.
+
+## Description
+
+There are **Bob Dylan** websites, and there are Bob Dylan **websites**. This is the latter - an application as invested in Dylan's music as it is functionality and user experience.
+
+## Usage
+
+With four unique pages, ~~No~~ Direction Home gives users a bit of every. On the "Home" page, watch as every five seconds a new curated Dylan lyric appears in the Lyric Window. 
+
+Or, perhaps you have the ranking bug. In which case, you can rank the top 10 Dylan songs on the "Rank Songs" page. Don't forget to save your changes if you're confident in your ratings!
+
+Enjoy some live Dylan videos on the "Live" page and add your own personal Dylan moment to the community-run "Moments" page.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
