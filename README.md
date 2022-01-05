@@ -10,7 +10,7 @@ There are **Bob Dylan** websites, and there are Bob Dylan **websites**. This is 
 
 With four unique pages, ~~No~~ Direction Home gives users a bit of every. On the "Home" page, watch as every five seconds a new curated Dylan lyric appears in the Lyric Window. 
 
-![Home Page][./images/photo-1.png]
+![Home Page](./images/photo-1.png)
 
 "Screen Shot 2022-01-05 at 11.45.22 AM.png"
 
