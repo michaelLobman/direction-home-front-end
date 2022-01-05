@@ -61,9 +61,21 @@ function RankSongs(){
     return(
         <div id="flex-container">
             <div id="image-container">
-                <img className="stacked-img" src="https://consequence.net/wp-content/uploads/2018/09/bob-dylan-blood-tracks-box-set-bootleg-series.png" />
-                <img className="stacked-img" src="https://www.rollingstone.com/wp-content/uploads/2018/11/bob-dylan-in-the-studio-1974-Barry-Feinstein.jpg" />
-                <img className="stacked-img" src="https://www.rockarchive.com/media/2204/bob-dylan-nobel-news-02.jpg?width=1120&height=undefined&upscale=false&slimmage=true&center=0.5,0.5&mode=crop" />
+                <img 
+                    className="stacked-img" 
+                    src="https://consequence.net/wp-content/uploads/2018/09/bob-dylan-blood-tracks-box-set-bootleg-series.png"
+                    alt="Dylan Listens to Playback"
+                />
+                <img 
+                    className="stacked-img" 
+                    src="https://www.rollingstone.com/wp-content/uploads/2018/11/bob-dylan-in-the-studio-1974-Barry-Feinstein.jpg" 
+                    alt="Dylan Write Lyrics"
+                />
+                <img 
+                    className="stacked-img" 
+                    src="https://www.rockarchive.com/media/2204/bob-dylan-nobel-news-02.jpg?width=1120&height=undefined&upscale=false&slimmage=true&center=0.5,0.5&mode=crop"
+                    alt="Dylan in Recording Studio"
+                />
             </div>
             <div id="vote-container">
                 <h3 id="rank-header" className="subheader">Rank the Top Dylan Songs</h3>

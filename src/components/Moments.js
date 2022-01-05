@@ -85,6 +85,7 @@ function Moments(){
             <img 
                 id="moment-img" 
                 src="https://media.gettyimages.com/photos/singer-bob-dylan-is-photographed-in-the-1970s-credit-must-read-ken-5-picture-id173184928?s=2048x2048"
+                alt="Dylan plays acoustic guitar - 1975"
             />
         </div>
         
