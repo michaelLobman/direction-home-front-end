@@ -10,6 +10,10 @@ There are **Bob Dylan** websites, and there are Bob Dylan **websites**. This is 
 
 With four unique pages, ~~No~~ Direction Home gives users a bit of every. On the "Home" page, watch as every five seconds a new curated Dylan lyric appears in the Lyric Window. 
 
+![Home Page][./images/photo-1.png]
+
+"Screen Shot 2022-01-05 at 11.45.22 AM.png"
+
 Or, perhaps you have the ranking bug. In which case, you can rank the top 10 Dylan songs on the "Rank Songs" page. Don't forget to save your changes if you're confident in your ratings!
 
 Enjoy some live Dylan videos on the "Live" page and add your own personal Dylan moment to the community-run "Moments" page.
